@@ -11,7 +11,7 @@ header{
   background-color: rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid #dc143c;
 }
-.top-logo{
+.title-logo{
   height: 60px;
   float: left;
   margin: 10px 50px;
@@ -32,4 +32,89 @@ header{
   color: #ffffff;
   text-decoration: none;
 }
+
 /*トップページメイン*/
+.top{
+  padding-top: 200px;
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  background: url(bg/bg5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top-logo{
+  width: 60%;
+  margin: 30px auto;
+}
+.top-logo img{
+  width: 50%;
+}
+.top-logo p{
+  letter-spacing: 8px;
+  color: #555555;
+}
+.heading{
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading h1{
+  color: #555555;
+  margin: 20px;
+  line-height: 40px;
+  font-family: "ヒラギノ明朝 ProN W6",
+   "HiraMinProN-W6",
+   "HG明朝E",
+   "ＭＳ Ｐ明朝",
+   "MS PMincho",
+   "MS 明朝", serif;
+   letter-spacing: 2px;
+}
+.heading p{
+  color: #444444;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "ヒラギノ明朝 ProN W6",
+   "HiraMinProN-W6",
+   "HG明朝E",
+   "ＭＳ Ｐ明朝",
+   "MS PMincho",
+   "MS 明朝", serif;
+}
+
+/*フッター*/
+footer{
+  background-color: #aaaaaa;
+  width: 100%;
+  height: 300px;
+}
+.foot-logo{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.foot-logo img{
+  height: 80px;
+}
+.foot-info{
+  margin-left: auto;
+  margin-right:auto;
+  text-align: center;
+  margin-top: 50px;
+}
+.foot-info p{
+  margin: 20px;
+  display: inline;
+  font-size: 20px;
+  color: #333333;
+  border-bottom: 1px dashed #dc143c;
+}
+.right{
+  text-align: center;
+  color: #333333;
+  font-size: 15px;
+  margin-top: 30px;
+}
