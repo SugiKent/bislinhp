@@ -101,7 +101,7 @@ header{
 footer{
   background-color: #aaaaaa;
   width: 100%;
-  height: 300px;
+  height: 380px;
 }
 .foot-logo{
   margin-left: auto;
@@ -124,6 +124,17 @@ footer{
   font-size: 20px;
   color: #333333;
   border-bottom: 1px dashed #dc143c;
+}
+.foot-twitter{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+  width: 150px;
+}
+.foot-twitter img{
+  display: inline;
+  width: 50px;
 }
 .rights{
   text-align: center;
