@@ -33,7 +33,7 @@ header{
   text-decoration: none;
 }
 
-/*トップページメイン*/
+/*トップページ*/
 .top{
   padding-top: 150px;
   width: 100%;
@@ -83,18 +83,37 @@ header{
    "MS PMincho",
    "MS 明朝", serif;
 }
-.top-link{
-  margin-top: 50px;
+
+/*Contact*/
+.contact{
+  padding-top: 150px;
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  background: url(bg/bg6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
 }
-.top-link p{
-  margin: 20px;
-  padding: 10px;
-  display: inline;
-  font-size: 20px;
-  color: #333333;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid #dc143c;
-  border-radius: 10px;
+.contact_title p{
+  font-size: 16px;
+  line-height: 35px;
+}
+.contact_email{
+  margin-top: 50px;
+  font-size: 16px;
+}
+.contact_email a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.contact_twitter{
+  margin-top: 50px;
+  font-size: 16px;
+}
+.contact_tweet{
+  margin-top: 25px;
 }
 
 /*フッター*/
