@@ -97,8 +97,14 @@ header{
   color: #ffffff;
 }
 .contact_title p{
-  font-size: 16px;
+  font-size: 18px;
   line-height: 35px;
+  font-family: "ヒラギノ明朝 ProN W6",
+   "HiraMinProN-W6",
+   "HG明朝E",
+   "ＭＳ Ｐ明朝",
+   "MS PMincho",
+   "MS 明朝", serif;
 }
 .contact_email{
   margin-top: 50px;
