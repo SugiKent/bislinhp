@@ -9,6 +9,10 @@
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="jquery.inview.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="js/jquery.bxslider.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -17,14 +21,22 @@
 	<ul class="menu">
 		<li><a href="top.html">Top</a></li>
 		<li><a href="about.html">About</a></li>
-		<li><a href="about.html">About</a></li>
 		<li><a href="activity.html">Activities</a></li>
+		<li><a href="seminar.html">Seminar</a></li>
 		<li><a href="contact.html">Contact</a></li>
 	</ul>
 </header>
 
 <main>
-
+	<div class="seminar">
+		
+		<div class="seminar-slide">
+			<ul class="bxslider">
+	  <li><img src="seminars/seminar1.png" /></li>
+	  <li><img src="seminars/seminar2.png" /></li>
+	</ul>
+		</div>
+	</div>
 </main>
 
 <footer>
@@ -36,7 +48,7 @@
 			</p>
 			<p><a href="activity.html">Activities</a>
 			</p>
-			<p><a href="seminar">Seminar</a>
+			<p><a href="seminar.html">Seminar</a>
 			</p>
 			<p><a href="contact.html">Contact</a>
 			</p>
@@ -51,6 +63,14 @@
 </p>
 </div>
 </footer>
-
+<script>
+$(function(){
+	$('.bxslider').bxSlider({
+		auto:true,
+		speed:2000,
+		pause:5000
+	});
+});
+</script>
 </body>
 </html>
