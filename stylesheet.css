@@ -85,6 +85,16 @@ header{
 }
 
 /* Seminar */
+.seminar{
+  padding-top: 150px;
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  background: url(bg/bg3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 /*Contact*/
@@ -148,8 +158,11 @@ footer{
   margin: 20px;
   display: inline;
   font-size: 20px;
+}
+.foot-info a{
   color: #333333;
   border-bottom: 1px dashed #dc143c;
+  text-decoration: none;
 }
 .foot-twitter{
   margin-left: auto;
