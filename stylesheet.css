@@ -6,19 +6,19 @@
 /*メニューバー*/
 header{
   position: fixed;
-  height: 80px;
+  height: 60px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid #dc143c;
 }
 .title-logo{
-  height: 60px;
+  height: 40px;
   float: left;
   margin: 10px 50px;
 }
 .menu{
   float: right;
-  margin: 25px 50px;
+  margin: 20px 50px;
 }
 .menu ul{
   list-style: none;
@@ -97,8 +97,14 @@ header{
   color: #ffffff;
 }
 .contact_title p{
-  font-size: 16px;
+  font-size: 18px;
   line-height: 35px;
+  font-family: "ヒラギノ明朝 ProN W6",
+   "HiraMinProN-W6",
+   "HG明朝E",
+   "ＭＳ Ｐ明朝",
+   "MS PMincho",
+   "MS 明朝", serif;
 }
 .contact_email{
   margin-top: 50px;
@@ -106,14 +112,12 @@ header{
 }
 .contact_email a{
   color: #ffffff;
-  text-decoration: none;
+}
+.contact_email p{
+  font-size: 12px;
 }
 .contact_twitter{
   margin-top: 50px;
-  font-size: 16px;
-}
-.contact_tweet{
-  margin-top: 25px;
 }
 
 /*フッター*/
