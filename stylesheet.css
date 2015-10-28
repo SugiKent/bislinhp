@@ -10,6 +10,7 @@ header{
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid #dc143c;
+  z-index: 99;
 }
 .title-logo{
   height: 40px;
@@ -86,7 +87,7 @@ header{
 
 /* Seminar */
 .seminar{
-  padding-top: 150px;
+  padding-top: 100px;
   width: 100%;
   height: 800px;
   text-align: center;
@@ -95,7 +96,16 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.seminar-slide{
+  width: 500px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bxslider img{
+  width: 500px;
+  height: auto;
+}
 
 /*Contact*/
 .contact{

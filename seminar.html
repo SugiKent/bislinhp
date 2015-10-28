@@ -9,6 +9,10 @@
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="jquery.inview.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="js/jquery.bxslider.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -25,7 +29,13 @@
 
 <main>
 	<div class="seminar">
-		<h1>現在予定しているセミナー</h1>
+		
+		<div class="seminar-slide">
+			<ul class="bxslider">
+	  <li><img src="seminars/seminar1.png" /></li>
+	  <li><img src="seminars/seminar2.png" /></li>
+	</ul>
+		</div>
 	</div>
 </main>
 
@@ -53,6 +63,14 @@
 </p>
 </div>
 </footer>
-
+<script>
+$(function(){
+	$('.bxslider').bxSlider({
+		auto:true,
+		speed:2000,
+		pause:5000
+	});
+});
+</script>
 </body>
 </html>
