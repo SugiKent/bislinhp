@@ -87,18 +87,14 @@ header{
 
 /* Seminar */
 .seminar{
-  padding-top: 100px;
+  padding-top: 60px;
   width: 100%;
-  height: 800px;
   text-align: center;
-  background: url(bg/bg3.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #ffffff;
 }
 .seminar-slide{
-  width: 500px;
-  margin-top: 50px;
+  width: 100%;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -106,6 +102,52 @@ header{
   width: 500px;
   height: auto;
 }
+.seminar-index{
+  margin: 50px auto;
+}
+.seminar-event{
+  width: 800px;
+  background-color: #aaaaaa;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.seminar-event h2{
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px
+}
+.seminar-info{
+  text-align: left;
+}
+.seminar-info img{
+  width: 300px;
+  padding: 25px;
+  float: left;
+}
+.seminar-content{
+  width: 350px;
+  padding: 25px;
+  float: left;
+}
+.seminar-content p{
+  font-size: 14px;
+}
+.seminar-content table{
+  margin: 10px auto 10px 0px;;
+}
+.seminar-content td{
+  padding-right: 10px;
+  line-height: 30px;
+  font-size: 12px;
+  border-bottom: 1px dashed #eeeeee;
+}
+/*floatによるレイアウト崩れ防止*/
+.clear{
+  clear: both;
+}
+
 
 /*Contact*/
 .contact{
@@ -148,6 +190,7 @@ footer{
   background-color: #aaaaaa;
   width: 100%;
   height: 380px;
+  border-top: 1px solid #dc143c;
 }
 .foot-logo{
   margin-left: auto;
