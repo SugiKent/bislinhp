@@ -45,7 +45,6 @@ header {
   background: url(bg/bg5.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
 }
 .top-logo {
