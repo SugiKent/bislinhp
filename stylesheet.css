@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family:'メイリオ', Meiryo, serif ;
 }
 
 /*メニューバー*/
@@ -67,14 +68,12 @@ header {
   color: #555555;
   margin: 20px;
   line-height: 40px;
-  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
   letter-spacing: 2px;
 }
 .heading p {
   color: #444444;
   font-size: 17px;
   line-height: 30px;
-  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
 }
 /*Activity*/
 .activity{
