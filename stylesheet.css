@@ -10,7 +10,7 @@ header {
   position: fixed;
   height: 60px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #dc143c;
   z-index: 99;
 }
@@ -32,7 +32,7 @@ header {
   font-size: 20px;
 }
 .menu li a {
-  color: #ffffff;
+  color: #810000;
   text-decoration: none;
 }
 
@@ -75,6 +75,19 @@ header {
   font-size: 17px;
   line-height: 30px;
 }
+/*About us*/
+.about{
+  padding-top: 100px;
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  background: url(bg/bg1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 /*Activity*/
 .activity{
   padding-top: 100px;
@@ -237,31 +250,15 @@ footer {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 .foot-logo img {
-  height: 80px;
-}
-.foot-info {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-top: 50px;
-}
-.foot-info p {
-  margin: 20px;
-  display: inline;
-  font-size: 20px;
-}
-.foot-info a {
-  color: #333333;
-  border-bottom: 1px dashed #dc143c;
-  text-decoration: none;
+  height: 50px;
 }
 .foot-twitter {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 50px;
   text-align: center;
   width: 150px;
 }
