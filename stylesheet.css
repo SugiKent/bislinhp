@@ -8,32 +8,42 @@
 
 header {
   position: fixed;
-  height: 60px;
+  height: 50px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid #dc143c;
+  border-bottom: 2px solid #dc143c;
   z-index: 99;
+  display: none;
 }
 .title-logo {
-  height: 40px;
+  height: 30px;
   float: left;
   margin: 10px 50px;
 }
 .menu {
   float: right;
-  margin: 20px 50px;
+  margin: 0px 50px;
 }
 .menu ul {
   list-style: none;
 }
 .menu li {
   display: inline;
-  padding: 20px;
-  font-size: 20px;
+  font-size: 15px;
 }
 .menu li a {
-  color: #810000;
+  color: #fff;
   text-decoration: none;
+  display: inline-block;
+  line-height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.menu li a:hover{
+  background-color: rgba(204, 23, 23, 0.53);
+  color: #fff;
+}
+#top-header{
+  display: none;
 }
 
 /*トップページ*/
@@ -51,6 +61,7 @@ header {
 .top-logo {
   width: 60%;
   margin: 30px auto;
+  display: none;
 }
 .top-logo img {
   width: 50%;
@@ -64,11 +75,17 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
-.heading h1 {
+.textSplitLoad {
+    display: none;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+.split {
   color: #555555;
+  visibility: hidden;
   margin: 20px;
   line-height: 40px;
   letter-spacing: 2px;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 .heading p {
   color: #444444;
@@ -114,66 +131,66 @@ header {
 .seminar-index {
   padding: 50px auto;
 }
+/*ここから各セミナー情報*/
 .seminar-event {
-  width: 800px;
-  background-color: #aaaaaa;
+  width: 60%;
+  background-color: rgba(70, 70, 70, 0.5);
+  border: 3px solid rgb(199, 48, 48);
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
 }
-.seminar-event h2 {
-  text-align: left;
-  padding-left: 20px;
-  padding-top: 5px
-}
 .seminar-info {
   text-align: left;
+  color: #fff;
 }
 .seminar-info img {
-  width: 300px;
+  width: 30%;
   padding: 15px 25px;
   float: left;
 }
 .seminar-content {
-  width: 350px;
+  width: 60%;
   padding: 10px 0px 15px 25px;
   float: left;
 }
 .seminar-content p {
   font-size: 14px;
+  letter-spacing: 0.2em;
 }
 .seminar-content table {
   margin: 10px 0px;
-  ;
 }
 .seminar-content td {
   padding-right: 10px;
   line-height: 30px;
   font-size: 12px;
-  border-bottom: 1px dashed #eeeeee;
+  border-bottom: 1px dashed #fff;
 }
 
 /*floatによるレイアウト崩れ防止兼応募リンク*/
-
 .seminar-form {
   clear: both;
-  width: 200px;
+  width: 150px;
   height: 40px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #00B9EF;
-  border-radius: 25px;
-  color: #eeeeee;
+  background-color: rgba(255, 0, 0, 0.75);
 }
-.seminar-form p {
+.seminar-form p a {
   text-align: center;
+  text-decoration: none;
   font-size: 20px;
+  color: #eeeeee;
   line-height: 38px;
 }
-
+.seminar-form :hover{
+  background-color: rgba(255, 8, 8, 0.5);
+  text-decoration: none;
+  color: #ffffff;
+}
 /* 応募ボタン下の空白 */
-
 .seminar-form-bottom {
   height: 10px;
 }
@@ -199,18 +216,18 @@ header {
   line-height: 35px;
 }
 .contact-info{
-  width: 800px;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px;
 }
 .contact_email {
-  width: 350px;
-  margin: 50px 25px;
+  width: 40%;
+  margin: 50px 20px;
   font-size: 16px;
   float: left;
 }
-.contact_email h2{
+.contact_email p{
   margin-bottom: 20px;
 }
 .contact_email h3{
@@ -218,21 +235,21 @@ header {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
-  background-color: #aaaaaa;
+  background-color: rgba(204, 23, 23, 0.9);
 }
 .contact_email a {
   color: #ffffff;
   text-decoration: none;
 }
 .contact_email h3:hover{
-  background-color: #333333;
+  background-color: rgba(204, 50, 50, 0.9);
 }
 .contact_email p {
   font-size: 12px;
 }
 .contact_twitter {
-  width: 350px;
-  margin: 50px 25px;
+  width: 40%;
+  margin: 50px 20px;
   float: left;
 }
 .clear{
@@ -241,9 +258,8 @@ header {
 /*フッター*/
 
 footer {
-  background-color: #aaaaaa;
+  background-color: rgb(223, 223, 223);
   width: 100%;
-  height: 380px;
   border-top: 1px solid #dc143c;
 }
 .foot-logo {
@@ -255,20 +271,20 @@ footer {
 .foot-logo img {
   height: 50px;
 }
-.foot-twitter {
+.foot-social {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
   text-align: center;
   width: 150px;
 }
-.foot-twitter img {
-  display: inline;
-  width: 50px;
+.fb-like{
+  margin: 15px auto;
 }
 .rights {
   text-align: center;
   color: #333333;
-  font-size: 15px;
+  font-size: 10px;
   margin-top: 30px;
+  padding-bottom: 30px;
 }

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html xml:lang="ja" lang="ja">
-
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>BISLIN</title>
-	<link rel="stylesheet" href="http://black-flag.net/data/css/reset.css">
 	<link rel="stylesheet" href="stylesheet.css">
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="jquery.inview.min.js"></script>
+	<script src="jquery.js"></script>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 	<header>
 		<img class="title-logo" src="img/logo.png" alt="BISLINのロゴ" />
 		<ul class="menu">
-			<li><a href="top.html">Top</a></li>
+			<li><a href="index.html">Top</a></li>
 			<li><a href="about.html">About</a></li>
 			<li><a href="activity.html">Activities</a></li>
 			<li><a href="seminar.html">Seminar</a></li>
@@ -29,8 +29,6 @@
 			<div class="seminar-index">
 				<!-- ここからコピー -->
 				<div class="seminar-event">
-					<!-- セミナーの題名 -->
-					<h2><b>業界王に俺はなる！３夜開催！企業セミナー</b></h2>
 					<div class="seminar-info">
 						<!-- セミナーのキャッチ画像 -->
 						<img src="seminars/seminar1.png" alt="３夜連続セミナー" />
@@ -69,7 +67,7 @@
 						</div>
 					</div>
 					<div class="seminar-form">
-						<p>応募はこちら</p>
+						<p><a href="http://goo.gl/forms/tzSfioTzgq">応募はこちら</a></p>
 					</div>
 					<div class="seminar-form-bottom">
 
@@ -79,8 +77,6 @@
 
 				<!-- ここからコピー -->
 				<div class="seminar-event">
-					<!-- セミナーの題名 -->
-					<h2><b>学生起業家呼んじゃいました！</b></h2>
 					<div class="seminar-info">
 						<!-- セミナーのキャッチ画像 -->
 						<img src="seminars/seminar2.png" alt="３夜連続セミナー" />
@@ -119,7 +115,7 @@
 						</div>
 					</div>
 					<div class="seminar-form">
-						<p>応募はこちら</p>
+						<p><a href="#">応募はこちら</a></p>
 					</div>
 					<div class="seminar-form-bottom">
 
@@ -136,39 +132,31 @@
 	</main>
 
 	<footer>
-		<div class="foot-logo">
-			<img src="img/logo.png" alt="BISLINのロゴ" />
-		</div>
-		<div class="foot-info">
-			<p><a href="about.html">About us</a>
-			</p>
-			<p><a href="activity.html">Activities</a>
-			</p>
-			<p><a href="seminar.html">Seminar</a>
-			</p>
-			<p><a href="contact.html">Contact</a>
-			</p>
-		</div>
-		<div class="foot-twitter">
-			<img src="img/twitter_dark.png" alt="ツイッターの画像">
-			<img src="img/facebook_dark.png" alt="フェイスブックの画像" />
-		</div>
-		<div class="rights">
-			<p>
-				© 2015 BISLIN
-			</p>
-		</div>
+
+
+			<div class="foot-social">
+				<a href="https://twitter.com/bis_lin" class="twitter-follow-button" data-show-count="false">Follow @bis_lin</a>
+				<div class="fb-like"></div>
+			</div>
+			<div class="foot-logo">
+				<img src="img/logo.png" alt="BISLINのロゴ" />
+			</div>
+	<div class="rights">
+	<p>
+		© 2015 BISLIN
+	</p>
+	</div>
 	</footer>
-	<script>
-		$(function() {
-			$('.bxslider').bxSlider({
-				auto: true,
-				speed: 2000,
-				pause: 5000
-			});
-		});
-
-	</script>
-</body>
-
-</html>
+	<!--Twitterのボタン-->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	<!--facebookのいいねボタン -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	</body>
+	</html>
