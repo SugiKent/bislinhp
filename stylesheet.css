@@ -19,18 +19,21 @@ header {
   float: left;
   margin: 10px 50px;
 }
-.menu {
+.menuMobile{
+  display: none;
+}
+.menuPC {
   float: right;
   margin: 0px 50px;
 }
-.menu ul {
+.menuPC ul {
   list-style: none;
 }
-.menu li {
+.menuPC li {
   display: inline;
   font-size: 15px;
 }
-.menu li a {
+.menuPC li a {
   color: #fff;
   text-decoration: none;
   display: inline-block;
@@ -38,29 +41,21 @@ header {
   padding-left: 10px;
   padding-right: 10px;
 }
-.menu li a:hover{
+.menuPC li a:hover{
   background-color: rgba(204, 23, 23, 0.53);
   color: #fff;
 }
-#top-header{
-  display: none;
-}
-
 /*トップページ*/
 
 .top {
-  padding-top: 150px;
   width: 100%;
   height: 800px;
   text-align: center;
   background: url(bg/bg5.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .top-logo {
   width: 60%;
-  margin: 30px auto;
+  margin: 80px auto 0px;
   display: none;
 }
 .top-logo img {
@@ -71,9 +66,10 @@ header {
   color: #555555;
 }
 .heading {
-  width: 55%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 80px;
 }
 .textSplitLoad {
     display: none;
@@ -86,11 +82,6 @@ header {
   line-height: 40px;
   letter-spacing: 2px;
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-}
-.heading p {
-  color: #444444;
-  font-size: 17px;
-  line-height: 30px;
 }
 /*About us*/
 .about{
@@ -119,17 +110,9 @@ header {
 /* Seminar */
 
 .seminar {
-  padding-top: 60px;
-  width: 100%;
   text-align: center;
   background: url(bg/bg3.png);
-  background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.seminar-index {
-  padding: 50px auto;
 }
 /*ここから各セミナー情報*/
 .seminar-event {
@@ -201,19 +184,15 @@ header {
 /*Contact*/
 
 .contact {
-  padding-top: 150px;
-  width: 100%;
   text-align: center;
   background: url(bg/bg6.png);
-  background-position: center;
-  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
   color: #ffffff;
 }
 .contact_title p {
   font-size: 18px;
   line-height: 35px;
+  margin-top: 50px;
 }
 .contact-info{
   width: 50%;
@@ -269,17 +248,17 @@ footer {
   padding-top: 20px;
 }
 .foot-logo img {
-  height: 50px;
+  width: 250px;
 }
 .foot-social {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
   text-align: center;
-  width: 150px;
+  width: 300px;
 }
-.fb-like{
-  margin: 15px auto;
+.facebook{
+  margin-top: 20px;
 }
 .rights {
   text-align: center;
@@ -287,4 +266,88 @@ footer {
   font-size: 10px;
   margin-top: 30px;
   padding-bottom: 30px;
+}
+/*上部のpaddingや背景の固定横幅設定*/
+.topPaddingBack{
+  width: 100%;
+  padding-top: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ウィンドウ幅が0〜500pxの場合に適用するCSS */
+
+@media screen and (max-width:500px) {
+
+/*header部分*/
+  header{
+    height: 40px;
+  }
+  .title-logo{
+    height: 65%;
+    margin: 5px;
+  }
+  .menuPC {
+    display: none;
+  }
+  .menuMobile {
+    display: inline;
+  }
+  .menuMobile li {
+    align: right;
+    padding-right: 5px;
+    list-style: none;
+  }
+  .header-menu {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+  }
+  #language-list {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+  }
+  #language-list li {
+    line-height: 60px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: rgba(80, 80, 80, 0.57);
+    border-bottom: 1px dashed #fff;
+  }
+  #language-list a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.3em;
+  }
+  .hide-list {
+    display: none;
+  }
+  /* index.html */
+  .top{
+
+    }
+  .top-logo img{
+    width: 100%;
+  }
+  .top-logo p{
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+  .heading{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .heading h1{
+    font-size: 20px;
+  }
+  /*footer*/
+  .foot-logo img{
+    width: 40%;
+  }
 }

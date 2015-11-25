@@ -8,6 +8,13 @@ $('header').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
 	}
 });
 });
+$(function() {
+//スマホメニュー部分のアニメーション
+  $('#language-show').click(function() {
+    $('#language-list').toggleClass('hide-list').next().slideToggle(1000);
+  });
+});
+
 
 //index.htmlのロゴアニメーション
 $(function() {
@@ -40,7 +47,7 @@ $(function(){
         setElm.find('.textSplitLoad').each(function(i){
             splitThis = $(this);
             splitTxt = splitThis.text();
-            splitThis.delay(i*(delaySpeed)).css({display:'inline-block',opacity:'0'}).animate({opacity:'1'},fadeSpeed);
+            splitThis.delay(i*(delaySpeed)).css({display:'inline',opacity:'0'}).animate({opacity:'1'},fadeSpeed);
         });
         setTimeout(function(){
                 setElm.html(setText);
