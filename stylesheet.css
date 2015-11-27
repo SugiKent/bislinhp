@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family:'メイリオ', Meiryo, serif ;
+  font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
 }
 
 /*メニューバー*/
@@ -153,6 +153,9 @@ header {
 }
 
 /*floatによるレイアウト崩れ防止兼応募リンク*/
+.mobileDisplay{
+  display: none;
+}
 .seminar-form {
   clear: both;
   width: 150px;
@@ -364,19 +367,26 @@ footer {
     width: 100%;
     padding: 0;
     float: none;
-		 margin: auto;
+		margin: auto;
     text-align: left;
   }
   .seminar-content p{
     font-size: 12px;
   }
+  .pcDisplay{
+    display: none;
+  }
+  .mobileDisplay{
+    display: block;
+    margin-bottom: 20px;
+  }
   .seminar-form{
     width: 50%;
-    height: 25px;
+    height: 30px;
   }
   .seminar-form p a {
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height: 30px;
   }
 	/*Contact*/
 	.contact_title p{
