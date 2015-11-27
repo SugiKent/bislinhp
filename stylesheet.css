@@ -117,7 +117,7 @@ header {
 /*ここから各セミナー情報*/
 .seminar-event {
   width: 60%;
-  background-color: rgba(70, 70, 70, 0.5);
+  background-color: rgb(255, 255, 255);
   border: 3px solid rgb(199, 48, 48);
   border-radius: 10px;
   margin-left: auto;
@@ -126,7 +126,7 @@ header {
 }
 .seminar-info {
   text-align: left;
-  color: #fff;
+  color: #333333;
 }
 .seminar-info img {
   width: 30%;
@@ -149,7 +149,7 @@ header {
   padding-right: 10px;
   line-height: 30px;
   font-size: 12px;
-  border-bottom: 1px dashed #fff;
+  border-bottom: 1px dashed #333;
 }
 
 /*floatによるレイアウト崩れ防止兼応募リンク*/
@@ -214,7 +214,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
-  background-color: rgba(204, 23, 23, 0.9);
+  border: 3px solid rgb(204, 23, 23);
 }
 .contact_email a {
   color: #ffffff;
@@ -278,7 +278,7 @@ footer {
 
 /* ウィンドウ幅が0〜500pxの場合に適用するCSS */
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:700px) {
 
 /*header部分*/
   header{
@@ -329,9 +329,6 @@ footer {
     display: none;
   }
   /* index.html */
-  .top{
-
-    }
   .top-logo img{
     width: 100%;
   }
@@ -345,6 +342,62 @@ footer {
   }
   .heading h1{
     font-size: 20px;
+  }
+  /*Seminar*/
+  .seminar{
+    background: url(bg/bg4.png);
+  }
+  .seminar-event{
+    width: 90%;
+  }
+  .seminar-info{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .seminar-info img{
+    width: 80%;
+    float: none;
+    padding: 10px 0q;
+  }
+  .seminar-content{
+    width: 100%;
+    padding: 0;
+    float: none;
+		 margin: auto;
+    text-align: left;
+  }
+  .seminar-content p{
+    font-size: 12px;
+  }
+  .seminar-form{
+    width: 50%;
+    height: 25px;
+  }
+  .seminar-form p a {
+    font-size: 15px;
+    line-height: 25px;
+  }
+	/*Contact*/
+	.contact_title p{
+    width: 90%;
+    font-size: 16px;
+    margin: 30px auto;
+    line-height: 20px;
+  }
+  .contact-info{
+    width: 90%;
+  }
+  .contact_email{
+    width: 100%;
+    margin: 50px auto;
+    font-size: 14px;
+    float: none;
+  }
+  .contact_twitter{
+    width: 80%;
+    margin: 30px auto;
+    float: none;
   }
   /*footer*/
   .foot-logo img{
