@@ -84,28 +84,108 @@ header {
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 /*About us*/
+
 .about{
   padding-top: 100px;
   width: 100%;
-  height: 800px;
-  text-align: center;
   background: url(bg/bg1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  color: #ffffff;
+}
+.about-index{
+  width: 60%;
+  margin-left:auto;
+  margin-right: auto;
+}
+.about-content{
+  padding-bottom: 60px;
+}
+.about-content p{
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  padding-bottom: 30px;
+}
+.about-content p a{
+  color: #fff;
+}
+.about-title{
+  width: 90%;
+  float: left;
+  padding: 10px 15px;
+  background-color: rgba(70, 70, 70, 0.5);
+  border: 3px solid rgb(199, 48, 48);
+  border-radius: 10px;
+}
+.about-pic{
+  width: 35%;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 0px 5px 5px;
+}
+.about-pic img{
+  width: 90%;
+  padding-bottom: 15px;
+}
+.about-text{
+  width: 60%;
+  float: left;
+  padding: 40px 0px 5px 5px
+}
+.about-partner{
+  width:100%;
+}
+.about-partner img{
+  width:17%;
+  float:left;
+  padding: 40px 0px 5px 5px;
 }
 
 /*Activity*/
 .activity{
   padding-top: 100px;
-  width: 100%;
-  height: 800px;
   text-align: center;
   background: url(bg/bg2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+.activity-title{
+  padding-top: 20px;
+}
+
+.activity-title{
+  width: 150px;
+  font-size: 17px;
+  padding: 5px 8px;
+  background-color: rgba(70, 70, 70, 0.5);
+  border: 3px solid rgb(199, 48, 48);
+  border-radius: 10px;
+  margin: 20px auto;
+}
+.activity-top{
+  font-size: 15px;
+  margin: 15px auto 0px;
+  padding-bottom: 20px;
+}
+.activity-companies{
+  width: 80%;
+  margin: 0 auto;
+}
+.company-list{
+  text-align: center;
+}
+.company-list img {
+  width: 120px;
+  margin: 10px 15px ;
+}
+.clear{
+  clear: both;
 }
 /* Seminar */
 
@@ -117,7 +197,7 @@ header {
 /*ここから各セミナー情報*/
 .seminar-event {
   width: 60%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.6);
   border: 3px solid rgb(199, 48, 48);
   border-radius: 10px;
   margin-left: auto;
@@ -126,7 +206,7 @@ header {
 }
 .seminar-info {
   text-align: left;
-  color: #333333;
+  color: #fff;
 }
 .seminar-info img {
   width: 30%;
@@ -149,7 +229,7 @@ header {
   padding-right: 10px;
   line-height: 30px;
   font-size: 12px;
-  border-bottom: 1px dashed #333;
+  border-bottom: 1px dashed #fff;
 }
 
 /*floatによるレイアウト崩れ防止兼応募リンク*/
@@ -180,7 +260,7 @@ header {
 .seminar-form-bottom {
   height: 10px;
 }
-.seminar-bottom {
+.bottomSpace {
   height: 50px;
 }
 
@@ -260,15 +340,24 @@ footer {
   text-align: center;
   width: 300px;
 }
+.foot-social p{
+  color: #333;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
 .facebook{
   margin-top: 20px;
 }
 .rights {
   text-align: center;
   color: #333333;
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 30px;
   padding-bottom: 30px;
+}
+.rights span{
+  color: rgb(170, 170, 170)
 }
 /*上部のpaddingや背景の固定横幅設定*/
 .topPaddingBack{
@@ -332,6 +421,9 @@ footer {
     display: none;
   }
   /* index.html */
+  .top{
+    background: url(bg/bg7.png);
+  }
   .top-logo img{
     width: 100%;
   }
@@ -345,6 +437,55 @@ footer {
   }
   .heading h1{
     font-size: 20px;
+  }
+  /*About*/
+  .about{
+    background-repeat: repeat;
+    background-size: auto;
+  }
+  .about-index{
+    width:90%
+  }
+  .about-content{
+    width:90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .about-content p{
+    font-size: 12px;
+    text-align: left;
+    padding-bottom: 0px;
+  }
+  .about-title h2{
+    font-size: 16px;
+  }
+  .about-pic{
+    width:80%;
+    float: none;
+    padding:0;
+
+  }
+  .about-pic img{
+    width:100%;
+    padding: 20px 0;
+  }
+  .about-text{
+    float: none;
+    width: 95%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-partner img{
+    width:25%;
+    float:none;
+    padding: 8px;
+    margin: 0 auto;
+  }
+  /*Activity*/
+.company-list img {
+    width: 60px;
+    margin: 2px 3px ;
   }
   /*Seminar*/
   .seminar{
