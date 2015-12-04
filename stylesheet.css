@@ -359,6 +359,9 @@ footer {
 .rights span{
   color: rgb(170, 170, 170)
 }
+.rights span a{
+  color: rgb(170, 170, 170)
+}
 /*上部のpaddingや背景の固定横幅設定*/
 .topPaddingBack{
   width: 100%;
