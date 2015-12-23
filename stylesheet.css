@@ -51,7 +51,7 @@ header {
   width: 100%;
   height: 800px;
   text-align: center;
-  background: url(bg/bg5.png);
+  background: url(bg/bg-natal.png);
 }
 .top-logo {
   width: 60%;
@@ -63,7 +63,7 @@ header {
 }
 .top-logo p {
   letter-spacing: 8px;
-  color: #555555;
+  color: #fff;
 }
 .heading {
   width: 80%;
@@ -76,7 +76,7 @@ header {
     font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 .split {
-  color: #555555;
+  color: #fff;
   visibility: hidden;
   margin: 20px;
   line-height: 40px;
@@ -263,6 +263,17 @@ header {
 .bottomSpace {
   height: 50px;
 }
+.seminar-break{
+  width: 60%;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  color: #fff;
+}
+.seminar-brank{
+  height: 800px;
+}
 
 /*Contact*/
 
@@ -425,7 +436,7 @@ footer {
   }
   /* index.html */
   .top{
-    background: url(bg/bg7.png);
+    background: url(bg/bg-natal-mobile.png);
   }
   .top-logo img{
     width: 100%;
@@ -496,6 +507,12 @@ footer {
   }
   .seminar-event{
     width: 90%;
+  }
+  .seminar-break{
+    font-size: 12px;
+    width: 90%;
+    height: 400px;
+    color: rgb(255, 0, 69);
   }
   .seminar-info{
     width: 90%;
