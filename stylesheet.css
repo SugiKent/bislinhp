@@ -51,7 +51,7 @@ header {
   width: 100%;
   height: 800px;
   text-align: center;
-  background: url(bg/bg-natal.png);
+  background: url(bg/bg5.png);
 }
 .top-logo {
   width: 60%;
@@ -63,7 +63,7 @@ header {
 }
 .top-logo p {
   letter-spacing: 8px;
-  color: #fff;
+  color: #555;
 }
 .heading {
   width: 80%;
@@ -76,7 +76,7 @@ header {
     font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 .split {
-  color: #fff;
+  color: rgb(85, 85, 85);
   visibility: hidden;
   margin: 20px;
   line-height: 40px;
@@ -436,7 +436,7 @@ footer {
   }
   /* index.html */
   .top{
-    background: url(bg/bg-natal-mobile.png);
+    background: url(bg/bg7.png);
   }
   .top-logo img{
     width: 100%;
