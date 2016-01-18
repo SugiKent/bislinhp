@@ -382,7 +382,7 @@ footer {
   background-size: cover;
 }
 
-/* ウィンドウ幅が0〜500pxの場合に適用するCSS */
+/* ウィンドウ幅が0〜700pxの場合に適用するCSS */
 
 @media screen and (max-width:700px) {
 
