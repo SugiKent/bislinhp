@@ -13,6 +13,7 @@ header {
   border-bottom: 2px solid #dc143c;
   z-index: 99;
   display: none;
+  background:  rgba(255, 255, 255, 0.75);
 }
 .title-logo {
   height: 30px;
@@ -31,10 +32,10 @@ header {
 }
 .menuPC li {
   display: inline;
-  font-size: 15px;
+  font-size: 18px;
 }
 .menuPC li a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
   display: inline-block;
   line-height: 50px;
@@ -196,7 +197,7 @@ header {
 }
 /*ここから各セミナー情報*/
 .seminar-event {
-  width: 60%;
+  width: 75%;
   background-color: rgba(0, 0, 0, 0.6);
   border: 3px solid rgb(199, 48, 48);
   border-radius: 10px;
@@ -209,13 +210,13 @@ header {
   color: #fff;
 }
 .seminar-info img {
-  width: 30%;
-  padding: 15px 25px;
+  width: 35%;
+  padding: 15px;
   float: left;
 }
 .seminar-content {
-  width: 60%;
-  padding: 10px 0px 15px 25px;
+  width: 55%;
+  padding: 10px 0px 15px 20px;
   float: left;
 }
 .seminar-content p {
