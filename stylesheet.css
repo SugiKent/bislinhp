@@ -12,7 +12,6 @@ header {
     width: 100%;
     border-bottom: 2px solid #dc143c;
     z-index: 99;
-    display: none;
     background: rgba(255, 255, 255, 0.75);
 }
 .title-logo {
@@ -53,7 +52,7 @@ header {
     width: 100%;
     height: 800px;
     text-align: center;
-    background: url(bg/bg5.png);
+    background: url(bg/bg5.jpg);
 }
 .top-logo {
     width: 60%;
@@ -91,7 +90,7 @@ header {
 .about {
     padding-top: 100px;
     width: 100%;
-    background: url(bg/bg1.png);
+    background: url(bg/bg1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -152,7 +151,7 @@ header {
 .activity {
     padding-top: 100px;
     text-align: center;
-    background: url(bg/bg2.png);
+    background: url(bg/bg2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -195,7 +194,7 @@ header {
 
 .seminar {
     text-align: center;
-    background: url(bg/bg3.png);
+    background: url(bg/bg3.jpg);
     background-attachment: fixed;
 }
 
@@ -320,13 +319,61 @@ header {
 }
 .member-content__profile img{
   width: 200px;
+  cursor: pointer;
 }
-.member-content__profile p{
+.member-content__profile > p{
   width: 200px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
   position: relative;
   top: -46px;
   line-height: 40px;
+  cursor: pointer;
+}
+.member-content__profile > p:hover{
+  background: rgba(255,255,255,0.9);
+}
+.member-content__detail {
+  display: none;
+  width: 0px;
+  height: 0px;
+  background: rgba(255,255,255,0.9);
+  position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+  text-align: left;
+  z-index: 999;
+  color: #333;
+}
+.member-content__cancel {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.member-content__detail .member-detail__content{
+  margin: 50px;
+  text-align: center;
+}
+.member-detail__content p{
+  margin-top: 20px;
+  text-align: left;
+  font-size: 15px;
+  line-height: 30px;
+}
+.member-detail__content p strong{
+  font-size: 20px;
+  letter-spacing: 0.3em;
+}
+.member-detail__sns p{
+  display: inline-block;
+  padding: 0px 10px;
+}
+.member-detail__sns p a {
+  color: #333;
 }
 
 
@@ -334,7 +381,7 @@ header {
 
 .contact {
     text-align: center;
-    background: url(bg/bg6.png);
+    background: url(bg/bg6.jpg);
     background-attachment: fixed;
     color: #ffffff;
 }
@@ -493,7 +540,7 @@ footer {
     }
     /* index.html */
     .top {
-        background: url(bg/bg7.png);
+        background: url(bg/bg7.jpg);
     }
     .top-logo img {
         width: 100%;
@@ -559,7 +606,7 @@ footer {
     }
     /*Seminar*/
     .seminar {
-        background: url(bg/bg4.png);
+        background: url(bg/bg4.jpg);
     }
     .seminar-event {
         width: 90%;
@@ -605,6 +652,35 @@ footer {
         font-size: 20px;
         line-height: 30px;
     }
+    /*Members*/
+    .member-index {
+      width: 100%;
+    }
+    .member-content {
+      width: 100%;
+    }
+    .member-content__title {
+      font-size: 18px;
+      line-height: 40px;
+    }
+    .member-content__profile img{
+      width: 130px;
+    }
+    .member-content__profile > p{
+      width: 130px;
+      font-size: 14px;
+      top: -34px;
+      line-height: 28px;
+    }
+    .member-content__detail {
+      bottom: -50px;
+      padding-top: 20px;
+    }
+    .member-content__cancel {
+      top: auto;
+      bottom: 100px;
+    }
+
     /*Contact*/
     .contact_title p {
         width: 90%;

@@ -1,31 +1,40 @@
-$(window).ready(function(){
-	$('.member-content__profile p').next().hide();
-});
-$(function() {
 
-	//メニューバーのスライド表示
-$('header').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
-	if (isInView) {
-		if (visiblePartY == 'both') {
-			$(this).stop().show(1500);
-		}
-	}
-});
+$(function() {
+	windowWidth = $(window).width();
+	windowHeight = $(window).height();
 
 	// Memberページのプロフィール名前
-	$('.member-content__profile p').hover(function(){
-		name = $(this).text();
-		// fblink = $(this + 'a').attr('href');
-		var position = $($(this).next()).text();
-		$(this).text(position);
-	},
-	function(){
-		$(this).html(name);
+	$('.member-content__cancel').click(function(){
+		$('.member-content__detail').hide();
 	});
+	$('.member-content__profile > p ,.member-content__profile > img').click(function(){
+		$('.member-content__detail').hide().animate({
+			top: 0,
+			left: 0,
+			width: '0px',
+			height: '0px'
+		},0);
+		if (windowWidth > 700 ) {
+			$(this).siblings('.member-content__detail').show().animate({
+				top: 0,
+				left: 0,
+				width: '500px',
+				height: '500px'
+			},300);
+		} else {
+			$(this).siblings('.member-content__detail').show().animate({
+				top: 0,
+				left: 0,
+				width: windowWidth,
+				height: windowHeight + 100
+			},300);
+		}
+	});
+
 
 	//スマホメニュー部分のアニメーション
 	  $('#language-show').click(function() {
-	    $('#language-list').toggleClass('hide-list').next().slideToggle(1000);
+	    $('#language-list').toggleClass('hide-list').next().slideToslideToggle(1000);
 	  });
 
 		//index.htmlのロゴアニメーション
