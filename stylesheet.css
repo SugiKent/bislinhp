@@ -439,30 +439,61 @@ footer {
     width: 100%;
     border-top: 1px solid #dc143c;
 }
+.foot-left {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  padding:20px 50px 20px;
+  float: left;
+}
 .foot-logo {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 20px;
+  width: 100%;
 }
 .foot-logo img {
-    width: 250px;
+    width: 130px;
+    padding-bottom: 10px;
+    border-bottom: 1px #333 solid;
 }
-.foot-social {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    text-align: center;
-    width: 300px;
+.foot-menu {
+
 }
-.foot-social p {
+.foot-menu ul {
+  list-style: none;
+}
+.foot-menu ul li a {
+  color: #555;
+  font-size: 13px;
+  padding: 2px;
+  line-height: 30px;
+}
+.foot-right {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  text-align: left;
+  float: right;
+}
+.foot-right-title {
     color: #333;
     font-size: 14px;
     letter-spacing: 0.1em;
     margin-bottom: 20px;
 }
+.foot-social-left {
+  width: 20%;
+  float: left;
+}
+.foot-social-left div {
+  margin-top: 30px;
+}
+.foot-social-right {
+  width: 70%;
+  float: right;
+}
 .facebook {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 .rights {
     text-align: center;
@@ -542,6 +573,8 @@ footer {
     /* index.html */
     .top {
         background: url(bg/bg7.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .top-logo img {
         width: 100%;
@@ -725,7 +758,21 @@ footer {
         float: none;
     }
     /*footer*/
-    .foot-logo img {
-        width: 40%;
+    .foot-left {
+      display: none;
+    }
+    .foot-right {
+      float: none;
+      width: 90%;
+      text-align: center;
+    }
+    .foot-social-left {
+      float: none;
+    }
+    .foot-social-right {
+      float: none;
+    }
+    .foot-social-left div {
+      margin-top: 10px;
     }
 }
